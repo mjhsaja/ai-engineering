@@ -1,0 +1,64 @@
+# ==============================================================================
+# 1. AI MODELS & WEIGHTS (Crucial: Avoid committing gigabytes of binaries)
+# ==============================================================================
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.gguf
+*.onnx
+models/
+weights/
+checkpoints/
+
+# ==============================================================================
+# 2. DATASETS & EMBEDDINGS (Local storage, vector DBs & scraping artifacts)
+# ==============================================================================
+data/
+datasets/
+*.csv
+*.jsonl
+*.parquet
+*.pkl
+*.pickle
+
+# Local Vector Databases
+.chroma/
+faiss_index/
+.qdrant/
+lance_db/
+
+# ==============================================================================
+# 3. SECRETS & AI AGENT CONTROLS (Protects API keys from leaking)
+# ==============================================================================
+.env
+.env.*
+.envs/
+credentials/
+*.pem
+*.key
+
+# Local AI agent cache/logs (prevents leaking secrets to provider logs)
+.cursorignore
+.cursorindexingignore
+.aiignore
+.uignore
+.copilotignore
+CLAUD.md
+
+# ==============================================================================
+# 4. PYTHON, JUPYTER & IDE JUNK (Standard Python development stack)
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+.vscode/
+.DS_Store
+
+poetry.lock
