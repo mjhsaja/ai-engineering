@@ -61,4 +61,6 @@ venv/
 .vscode/
 .DS_Store
 
+pyproject.toml
 poetry.lock
+*:Zone.Identifier
