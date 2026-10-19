@@ -15,8 +15,8 @@ checkpoints/
 # ==============================================================================
 # 2. DATASETS & EMBEDDINGS (Local storage, vector DBs & scraping artifacts)
 # ==============================================================================
-data/
-datasets/
+# data/
+# datasets/
 *.csv
 *.jsonl
 *.parquet
